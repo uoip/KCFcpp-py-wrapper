@@ -3,6 +3,7 @@ I write a python wrapper for [KCFcpp](https://github.com/joaofaro/KCFcpp), some 
 Requirements
 -----
 * Python 2.7
+* pkgconfig Python package
 * NumPy
 * Cython
 * OpenCV (both C++ and Python interfaces)
