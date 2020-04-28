@@ -21,6 +21,10 @@
 #include <opencv2/opencv.hpp>
 #include <string>
 
+#ifdef USE_OPENCV4
+#include <opencv2/imgproc/types_c.h> // for CV_BGR2GRAY constant
+#endif
+
 class Tracker
 {
 public:
