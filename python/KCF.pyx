@@ -13,7 +13,7 @@ cdef class kcftracker:
 	def __cinit__(self, hog, fixed_window, multiscale, lab):
 		self.classptr = new KCFTracker(hog, fixed_window, multiscale, lab)
 		
-	def __dealloc(self):
+	def __dealloc__(self):
 		del self.classptr
 		
 	def init(self, rectlist, ary):
